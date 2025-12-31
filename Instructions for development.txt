@@ -1,0 +1,5 @@
+For the benefit of all people who will work on this spaghettified mess of code,(and mostly for the original team) I have provided a starter kit with all the things you need for working on this.
+Developing this project will require windows 10/11.
+You will also need to install everything in the starterkit folder, and follow the instructions for how to set it up(also in the folder).
+Best of luck.
+-Tfola54

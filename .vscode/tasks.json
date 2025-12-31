@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [],
+            "group": "build",
+            "presentation": { "reveal": "silent" },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "C/C++: cl.exe build active file",
+            "type": "cppbuild",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",                     // debug info
+                "/EHsc",                   // C++ exceptions
+                "/nologo",                 // suppress banner
+                "/std:c++20",              // use C++20 for std::format, std::array, etc.
+                "/DUNICODE",               // force Unicode APIs
+                "/D_UNICODE",
+                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}",
+                "/link",
+                "d3d12.lib",
+                "dxgi.lib",
+                "user32.lib",
+                "gdi32.lib"
+            ],
+            "options": { "cwd": "${fileDirname}" },
+            "problemMatcher": [ "$msCompile" ],
+            "group": "build",
+            "detail": "compiler: cl.exe"
+        }
+    ]
+}
