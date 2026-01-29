@@ -1,5 +1,13 @@
+IF YOU KNOW HOW C++ WORKS OR ALREADY HAVE A DEVELOPING ENVIRONMENT, YOU CAN SKIP THIS
+
+I am attempting to make this code as idiot-proof as possible, so... 
 For the benefit of all people who will work on this spaghettified mess of code,(and mostly for the original team) I have provided a starter kit with all the things you need for working on this.
-Developing this project will require windows 10/11.
-You will also need to install everything in the starterkit folder, and follow the instructions for how to set it up(also in the folder).
+Developing this project will require windows 10/11 for now, I will try to add Mac and Linux options to the setup folder, good luck on your own for now.
+I assume you have git, given that you have these files unless you downloaded the zip off the website.
+If you pulled off the command line, thank you, you're cool.
+If you have no knowledge of how c++, git, VS code, or any of the tools we will be using work, check in the guides folder.
+Currently, only the Git guide is written.
+Also, if you are a member of the team, please sign your name at the end of every comment and text file you make, it makes the code look cooler
+also we can blame people for breaking stuff
 Best of luck.
 -Tfola54

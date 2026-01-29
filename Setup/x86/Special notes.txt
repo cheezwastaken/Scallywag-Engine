@@ -1,0 +1,5 @@
+I was unable to find an x86 installer for vs code. Sorry :(
+Use this redist exe if you just want to run the program.
+If you do want to develop this, you are going to need to get newer hardware.
+
+-Tfola54

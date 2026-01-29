@@ -1,0 +1,54 @@
+Git allows you to take "Snapshots" of work on your local computer so you can experiment, roll back versions, and share it with your team while you all develop.
+This guide is for Git on the command line.
+Of course, you could always be a stinky little goober and use the app or website, but that's no fun.
+
+
+
+Some commands you should know:
+(Execute in any terminal, powershell, command prompt, vs code powershell window, just make sure that you push from the correct directory)
+
+git remote add origin "repository url"
+This tells Git where you want to push to. Very important to set up.
+
+git remote set-url origin "repository url"
+If you put in a wrong repo url or the project moved, use this command to change where you are pushing to.
+
+git clone "repository url"
+git clone clones the repository you select into the current directory you are in. Nothing too complicated. Keep in mind you do not need to wrap the repo url in quotes.
+
+git pull
+git pull pulls the files from the server and merges it with your code. Simple as that.
+
+git lfs pull
+git lfs pull will pull the files too big for git to store.
+
+git add
+When you run git add, it adds them to the "staging area". The staging area just tells git that you would like to include those files in the next snapshot. You can specify files you want to add by their path in the folder. Running git add . will add every file in the directory.
+
+git commit
+git commit adds everything in the staging area to Git itself, in a permanent snapshot of the files you chose to be in the staging area. You can attach descriptions to the commits by using git commit -m "this is where you put your message". git commit -m has a 50 char limit. You can also just run git commit, and it will open your default text editor.
+
+git push
+git push sends every commit that the server does not have yet, but don't worry. The files on the server will end up looking like the ones in the latest commit. Sometimes git will block your push because a teammate has pushed while you were working. Simply run git pull to merge the files on the server with your files, and then push.
+
+git
+Running git will give you a list of commands and how to use them. This file is just some of the most useful ones, and likely the only ones you will need on this project. If you are confused on how to use the command, you can run git "command" help to get more information about that command.
+
+Git setup(do this the first time you develop)
+1. Make a folder where you want to store the files
+2. Right click in the folder and click open in terminal
+3. git clone "https://github.com/cheezwastaken/Scallywag-Engine"
+4. git remote add origin "https://github.com/cheezwastaken/Scallywag-Engine"
+5. Git will ask you to sign into your account to verify that you can push into the repository
+6. You're Done!
+
+
+Git best practices 
+
+1. git pull every time before you start working
+2. Name your commits sensibly(i will be watching)
+3. Don't put random bull in the folder and don't commit at reasonable stopping points
+4. TEST YOUR CODE BEFORE YOU COMMIT
+5. Use common sense
+
+-Tfola54
