@@ -1,1 +1,7 @@
+# Track all .exe files in LFS
 *.exe filter=lfs diff=lfs merge=lfs -text
+
+# Exclude specific installers by relative path
+# (Assuming these are inside your repo folder)
+Setup/x64/git-lfs-windows-v3.7.1.exe -filter -diff -merge
+Setup/ARM64/git-lfs-windows-v3.7.1.exe -filter -diff -merge
